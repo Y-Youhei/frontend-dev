@@ -1,0 +1,42 @@
+@import "modules/variables";
+@import "modules/mixin";
+@import "modules/appear";
+@import "modules/botton";
+@import "modules/mobile-menu";
+@import "modules/hero-slider";
+@import "modules/text-animation";
+@import "modules/image-slides";
+
+
+
+// スマホ縦画面
+@import "breakpoints/base";
+
+// スマホの横画面（landscape）
+@media screen and (min-width: 480px) {
+  @import "breakpoints/480up";
+}
+
+// タブレット画面
+@media screen and (min-width: 600px) {
+  @import "breakpoints/600up";
+}
+// タブレットの横画面、小さいノートパソコン
+@media screen and (min-width: 960px) {
+  @import "breakpoints/960up";
+}
+
+// PCの画面
+@media screen and (min-width: 1280px) {
+  @import "breakpoints/1280up";
+}
+
+// レティーナディスプレイ対応
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  @import "breakpoints/2x";
+}
+
+// 印刷時のみ
+@media print {
+  @import "breakpoints/print";
+}
